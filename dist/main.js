@@ -3353,10 +3353,10 @@ function init() {
                     _a.sent();
                     chartFooter = document.getElementById(CHART_FOOTER_ID);
                     chartFooter.style.display = 'none';
-                    return [4 /*yield*/, axios_default().get('/static/T10Y2Y.csv')];
+                    return [4 /*yield*/, axios_default().get('/chart-site/static/T10Y2Y.csv')];
                 case 3:
                     res = _a.sent();
-                    return [4 /*yield*/, axios_default().get('/static/cycle_dates.csv')];
+                    return [4 /*yield*/, axios_default().get('/chart-site/static/cycle_dates.csv')];
                 case 4:
                     cycleDatesRes = _a.sent();
                     array = (csvToJson(res.data)
